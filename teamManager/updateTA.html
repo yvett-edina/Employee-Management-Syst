@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ActionStyle.css" rel="stylesheet">
+    <title>Team Manager - Admin - Update Team</title>
+</head>
+
+<body>
+    <div class="centerpart">
+
+        <h1>Update team information</h1>
+        <form action="updateTA.php" method="post">
+            <div class="container">
+                <label for="name">Team Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required>
+                <br />
+
+                <label for="field">Field to Update:</label>
+                <br />
+                <select id="field" name="field" required>
+                    <option value="MemberNr">Number of members</option>
+                    <option value="LeaderName">Leader name</option>
+                </select>
+                <br />
+                <label for="value">New Value:</label>
+                <br />
+                <input type="text" id="value" name="value" required>
+                <br />
+                <br />
+                <input type="submit" value="Update">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright"> Copyright © 2001-2024 Company Inc. | All Rights Reserved </p>
+    </footer>
+
+</body>

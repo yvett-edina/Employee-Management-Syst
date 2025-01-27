@@ -1,0 +1,54 @@
+body {
+    background-image: url(images/background.png);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(54, 96, 54);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(54, 96, 54);
+}
+
+.centerpart{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 243, 156);
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+input[type="submit"] {
+    background-color: rgb(199, 243, 156);
+    color: rgb(54, 96, 54);
+    border: 2px solid rgb(54, 96, 54);
+    border-radius: 5px;
+}
+
+/* COPYRIGHT */
+footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copyright{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+}

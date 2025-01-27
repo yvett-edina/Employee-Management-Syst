@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(199, 243, 156);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+    font-size: large;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.image-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    width: 950px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgb(199, 243, 156);
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    align-content: end;
+    width: 100%;
+    height: 100%;
+    animation: slide 30s infinite;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(10%); }
+    33% { transform: translateX(-90%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(10%); }
+}
+
+/*LINKS*/
+.link-container{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.loginlink{
+    border: 2px solid rgb(54, 96, 54);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.aboutlink{
+    border: 2px solid rgb(54, 96, 54);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 1150px;
+    margin-right: 10px;
+}
+
+a:link {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(54, 96, 54);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: violet;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/* SOCIALS */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(54, 96, 54);
+}
+
+/* COPYRIGHT */
+footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copyright{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+}

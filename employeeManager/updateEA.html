@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ActionStyle.css" rel="stylesheet">
+    <title>Employee Manager - Admin - Update Employee</title>
+</head>
+
+<body>
+    <div class="centerpart">
+
+        <h1>Update employee information</h1>
+        <form action="updateEA.php" method="post">
+            <div class="container">
+                <label for="name">Employee Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required>
+                <br />
+
+                <label for="field">Field to Update:</label>
+                <br />
+                <select id="field" name="field" required>
+                    <option value="email">Email</option>
+                    <option value="PhoneNumber">Phone number</option>
+                    <option value="Password">Password</option>
+                </select>
+                <br />
+                <label for="value">New Value:</label>
+                <br />
+                <input type="text" id="value" name="value" required>
+                <br />
+                <br />
+                <input type="submit" value="Update">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright"> Copyright © 2001-2024 Company Inc. | All Rights Reserved </p>
+    </footer>
+
+</body>

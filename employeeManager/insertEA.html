@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ActionStyle.css" rel="stylesheet">
+    <title>Employee Manager - Admin - Add New Employee</title>
+</head>
+
+<body>
+    <div class="centerpart">
+
+        <h1>Add new employee</h1>
+
+        <form action="insertEA.php" method="post">
+            <div class="container">
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required>
+                <br />
+
+                <label for="surname">Surname:</label>
+                <br />
+                <input type="text" id="surname" name="surname" required>
+                <br />
+
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" id="email" name="email" required>
+                <br />
+
+                <label for="phoneNr">Phone Number:</label>
+                <br />
+                <input type="text" id="phoneNr" name="phoneNr" required>
+                <br />
+
+                <label for="pwd">Password:</label>
+                <br />
+                <input type="password" id="pwd" name="pwd" required>
+                <br />
+
+                <label for="field">Department:</label>
+                <br />
+                <select id="field" name="field" required>
+                    <option value="" disabled selected></option>
+                    <option value="IT">IT</option>
+                    <option value="CS">Customer support</option>
+                </select>
+                
+                <br />
+                <br />
+                <input type="submit" value="Create">
+                <input type="reset" value="Clear form">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright"> Copyright © 2001-2024 Company Inc. | All Rights Reserved </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ActionStyle.css" rel="stylesheet">
+    <title>Salaries Manager - Admin - Update Salary</title>
+</head>
+
+<body>
+    <div class="centerpart">
+
+        <h1>Update salary information</h1>
+        <form action="updateSA.php" method="post">
+            <div class="container">
+                <label for="name">Employee Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required>
+                <br />
+
+                <label for="field">Field to Update:</label>
+                <br />
+                <select id="field" name="field" required onchange="toggleInputFields()">
+                    <option value="sum">Sum</option>
+                    <option value="payDate">Pay date</option>
+                </select>
+                <br />
+
+                <div id="sum-input" class="input-field">
+                <label for="value">New Sum:</label>
+                <br />
+                <input type="text" id="value" name="value">
+                <br />
+                </div>
+            
+                <div id="date-input" class="input-field" style="display: none;">
+                <label for="date">New Pay Date:</label>
+                <br />
+                <input type="date" id="date" name="date">
+                <br />
+                </div>
+                <br />
+
+                <input type="submit" value="Update">
+                <input type="reset" value="Clear form">
+            </div>
+        </form>
+    </div>
+    <script>
+        function toggleInputFields() {
+            var field = document.getElementById("field").value;
+            var sumInput = document.getElementById("sum-input");
+            var dateInput = document.getElementById("date-input");
+
+            if (field === "sum") {
+                sumInput.style.display = "block";
+                dateInput.style.display = "none";
+            } else if (field === "payDate") {
+                sumInput.style.display = "none";
+                dateInput.style.display = "block";
+            }
+        }
+    </script>
+
+    <footer>
+        <p class="copyright"> Copyright © 2001-2024 Company Inc. | All Rights Reserved </p>
+    </footer>
+
+</body>

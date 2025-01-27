@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ActionStyle.css" rel="stylesheet">
+    <title>Project Manager - Admin - Add New Project</title>
+</head>
+
+<body>
+    <div class="centerpart">
+
+        <h1>Add new project</h1>
+
+        <form action="insertPA.php" method="post">
+            <div class="container">
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required>
+                <br />
+
+                <label for="memberNr">Number of members:</label>
+                <br />
+                <input type="text" id="memberNr" name="memberNr" required>
+                <br />
+
+                <label for="field">Department:</label>
+                <br />
+                <select id="field" name="field" required>
+                    <option value="" disabled selected></option>
+                    <option value="IT">IT</option>
+                    <option value="CS">Customer support</option>
+                </select>
+                
+                <br />
+                <br />
+                <input type="submit" value="Create">
+                <input type="reset" value="Clear form">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright"> Copyright © 2001-2024 Company Inc. | All Rights Reserved </p>
+    </footer>
+    
+</body>
+</html>

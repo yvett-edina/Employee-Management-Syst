@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(199, 243, 156);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 200px;
+    height: 280px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.about-text{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px whitesmoke;
+    text-align: justify;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+    /* Set a fixed width and height for the text box */
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.employees{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* LINKS */
+a:link {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(54, 96, 54);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: violet;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/* SOCIALS */
+nav {
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 40px; /* Add space between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(54, 96, 54);
+}
+
+/* COPYRIGHT */
+footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copyright{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(54, 96, 54);
+    font-weight: bold;
+}
